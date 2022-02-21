@@ -8,7 +8,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    overflow-y: hidden;
 }
 
 
@@ -32,9 +31,11 @@
 .user-image i img{
     display: flex;
     border-radius: 50%;
-    max-width: 200px;
-    max-height: 200px;
-    margin-left: .3rem;
+    max-width: 190px;
+    max-height: 190px;
+    margin-top: .8rem;
+    margin-left: .45rem;
+    background: transparent;
 }
 
 .user-name {
@@ -43,13 +44,22 @@
 
 .icons-links {
     display:flex;
+    justify-content: center;
     margin-top:2rem;
+    width: 25rem;
+    height: 5rem;
+    overflow-x: hidden;
     
 }
-.icons-links a {width: 20rem;
-    height: 4rem;}
+.icons-links a {
+    width: 25rem;
+    height: 5rem;
+}
+
 .icons-links img {
-    margin-left: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
 
     transition: .3s;
 }
@@ -64,7 +74,7 @@
 }
 .link-sqr {
     display: flex;
-    width: 20rem;
+    width: 18rem;
     height: 3.1rem;
     border: 2px solid;
     border-color: var(--color-purple);
@@ -73,10 +83,11 @@
     transition: .3s
 }
 
-.link-sqr a {width:100%; color: var(--color-font); text-align: center; padding: .8rem;}
+.link-sqr a {width:100%; color: var(--color-font); display:flex; justify-content:center;align-items: center;text-align: center; padding: .8rem; font-size: 1.2rem;}
 
 .link-sqr:hover {
-    transform:scale(1.1)
+    transform:scale(1.01);
+    background: #d7d9ec;
 
 }
 
@@ -84,4 +95,29 @@
     .main-content {
         margin: 1rem auto 2rem auto
     }
+}
+
+@media (min-width:1024px) {
+    .user-image {
+        width: 250px;
+        height: 250px; 
+    }
+    .user-image i img{
+        max-width: 230px;
+        max-height: 230px
+    }
+
+    .links {
+        width:45rem;
+        height: 100%; 
+    }
+
+    .link-sqr {
+        width: 25rem;
+        height: 5rem
+       }
+    
+       .link-sqr a {
+           font-size: 1.6rem;
+       }
 }
