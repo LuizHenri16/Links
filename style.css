@@ -1,7 +1,83 @@
 :root {
     --color-purple: #343a8b;
-    --color-font: #15194e;
+
+    --background-color-light:#e7e7e7;
+    --background-color-dark:#0b0d1b;
+
+    --font-color-light:#141852;
+    --font-color-dark:#ffeaea;
 }
+
+/*Light/Dark Mode*/
+
+.darkMode-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    
+    margin: 1rem auto 3rem 1rem;
+}
+
+.darkMode-button p{
+    margin-left: 1rem;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+    background-color: rgb(61, 61, 61);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 16px;
+	width: 16px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(20px);
+}
+
+body {
+     background: var(--background-color-light);
+     color: var(--font-color-light);
+     border-color: var(--font-color-light);
+     
+    transition: .2s;
+}
+
+body.dark {
+    background: var(--background-color-dark);
+    color: var(--font-color-dark);
+    border-color: var(--font-color-dark);
+   transition: .2s;
+}
+
+body.dark .icons-links a img {
+    filter: invert(100%) sepia(9%) saturate(5613%) hue-rotate(285deg) brightness(125%) contrast(107%);
+}
+
+/*Light/Dark Mode*/
 
 * {
     margin: 0;
@@ -16,18 +92,17 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 10rem auto 2rem auto
+    margin: 5rem auto 2rem auto; 
 }
-
 
 .user-image {
     width: 210px;
     height: 210px;
     border: 3px solid;
-    border-color: var(--color-purple);
     border-radius: 50%;
 
 }
+
 .user-image i img{
     display: flex;
     border-radius: 50%;
@@ -39,7 +114,11 @@
 }
 
 .user-name {
-    text-align: center; margin-top:.5rem; color:var(--color-font);
+    text-align: center; margin-top:.5rem; color:var(--font-color-light);
+}
+
+ body.dark .user-name {
+    text-align: center; margin-top:.5rem; color:var(--font-color-dark);
 }
 
 .icons-links {
@@ -77,10 +156,13 @@
     width: 18rem;
     height: 3.1rem;
     border: 2px solid;
-    border-color: var(--color-purple);
+    border-color: var(--font-color-light);
     border-radius: 0.2rem;
     margin: 1rem auto;
     transition: .3s
+}
+body.dark .link-sqr {
+    border-color: var(--font-color-dark);
 }
 
 .link-sqr a {width:100%; color: var(--color-font); display:flex; justify-content:center;align-items: center;text-align: center; padding: .8rem; font-size: 1.2rem;}
@@ -88,8 +170,12 @@
 .link-sqr:hover {
     transform:scale(1.01);
     background: #d7d9ec;
-
 }
+
+body.dark .link-sqr:hover {
+    background: #c8ccff63;
+}
+
 
 @media (max-width: 510px) {
     .main-content {
