@@ -1,10 +1,10 @@
 :root {
     --color-purple: #343a8b;
 
-    --background-color-light:#e7e7e7;
-    --background-color-dark:#0b0d1b;
+    --background-color-light:#dbdbdb;
+    --background-color-dark:#1d1e27;
 
-    --font-color-light:#141852;
+    --font-color-light:#343a8b;
     --font-color-dark:#ffeaea;
 }
 
@@ -86,7 +86,6 @@ body.dark .icons-links a img {
     text-decoration: none;
 }
 
-
 .main-content {
     display:flex;
     flex-direction:column;
@@ -100,7 +99,9 @@ body.dark .icons-links a img {
     height: 210px;
     border: 3px solid;
     border-radius: 50%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .user-image i img{
@@ -108,9 +109,6 @@ body.dark .icons-links a img {
     border-radius: 50%;
     max-width: 190px;
     max-height: 190px;
-    margin-top: .8rem;
-    margin-left: .45rem;
-    background: transparent;
 }
 
 .user-name {
@@ -157,7 +155,7 @@ body.dark .icons-links a img {
     height: 3.1rem;
     border: 2px solid;
     border-color: var(--font-color-light);
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     margin: 1rem auto;
     transition: .3s
 }
