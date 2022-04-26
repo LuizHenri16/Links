@@ -97,11 +97,17 @@ body.dark .icons-links a img {
 .user-image {
     width: 210px;
     height: 210px;
+
+    color:var(--font-color-light);
     border: 3px solid;
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    margin-top:.5rem;
 }
 
 .user-image i img{
@@ -112,26 +118,23 @@ body.dark .icons-links a img {
 }
 
 .user-name {
-    text-align: center; margin-top:.5rem; color:var(--font-color-light);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:.5rem;
 }
 
- body.dark .user-name {
-    text-align: center; margin-top:.5rem; color:var(--font-color-dark);
+body.dark .user-name {
+    color:var(--font-color-dark);
 }
 
 .icons-links {
     display:flex;
-    justify-content: center;
-    margin-top:2rem;
+    justify-content: space-around;
+    align-items: center;
     width: 25rem;
-    height: 5rem;
+    height: 7rem;
     padding: 1rem;
-    overflow-x: hidden;
-    
-}
-.icons-links a {
-    width: 25rem;
-    height: 5rem;
     
 }
 
@@ -141,13 +144,12 @@ body.dark .icons-links a img {
     transition: .3s;
 }
 
-.pad {
-    margin-left: 1rem;
+.icons-links img:hover {
+    transform: scale(1.1)
 }
 
-.icons-links img:hover {
+.icons-links img:active {
     transform: scale(0.9)
-    
 }
 .links {
     width:25rem;
@@ -155,9 +157,11 @@ body.dark .icons-links a img {
 }
 .link-sqr {
     display: flex;
-    width: 18rem;
-    height: 3.1rem;
+    width: 20rem;
+    height: 3.5rem;
+
     border: 2px solid;
+
     border-color: var(--font-color-light);
     border-radius: 0.5rem;
     padding: .5rem;
@@ -168,29 +172,84 @@ body.dark .link-sqr {
     border-color: var(--font-color-dark);
 }
 
-.link-sqr a {
+.link-sqr {
     width:100%;
-    color: var(--color-font); 
+    
     display:flex; 
     justify-content:center;
     align-items: center;
-    text-align: center;  
-    font-size: 1.2rem;}
+    text-align: center; 
+
+    color: var(--color-font);
+    font-size: 1.2rem;
+
+    cursor: pointer;}
 
 .link-sqr:hover {
     transform:scale(1.01);
-    cursor: pointer;
+    
     background: #d7d9ec;
+}
+
+.link-sqr:active {
+    transform:scale(.9);
 }
 
 body.dark .link-sqr:hover {
     background: #c8ccff63;
 }
 
+@media (max-width: 420px) {
+
+    .user-image {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .user-image i img{
+        width: 180px;
+        height: 180px
+    }
+
+    .icons-links {
+        margin-top:1rem;      
+    }
+
+    .link-sqr {
+        width: 19rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+    
+}
 
 @media (max-width: 510px) {
     .main-content {
         margin: 1rem auto 2rem auto
+    }
+}
+
+
+@media (min-width:690px) {
+    .user-image {
+        width: 240px;
+        height: 240px; 
+    }
+    .user-image i img{
+        max-width: 210px;
+        max-height: 210px
+    }
+
+    .links {
+        width:45rem;
+        height: 100%; 
+    }
+
+    .link-sqr {
+        width: 23rem;
+        height: 5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -200,8 +259,8 @@ body.dark .link-sqr:hover {
         height: 250px; 
     }
     .user-image i img{
-        max-width: 230px;
-        max-height: 230px
+        max-width: 220px;
+        max-height: 220px
     }
 
     .links {
@@ -211,10 +270,45 @@ body.dark .link-sqr:hover {
 
     .link-sqr {
         width: 25rem;
-        height: 5rem
+        height: 5rem;
+        font-size: 1.4rem;
        }
-    
-       .link-sqr a {
-           font-size: 1.6rem;
+
+    .icons-links img {
+        width:3rem;
+        height: 3rem;
+        transition: .3s;
+    }
+}
+
+@media (min-width:1940px) {
+    .user-image {
+        width: 270px;
+        height: 270px; 
+    }
+    .user-image i img{
+        max-width: 240px;
+        max-height: 240px
+    }
+
+    .links {
+        width:47rem;
+        height: 100%; 
+    }
+
+    .link-sqr {
+        width: 28rem;
+        height: 5rem;
+        font-size: 1.4rem;
        }
+
+       .icons-links img {
+        width: 4rem;
+        height: 4rem;
+        transition: .3s;
+    }
+
+    .user-name {
+        font-size: 1.4rem;
+    }
 }
