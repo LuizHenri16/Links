@@ -124,7 +124,7 @@ body.dark .icons-links a img {
     margin-top:.5rem;
 }
 
-body.dark .user-name {
+body.dark .user-name, body.dark .user-image {
     color:var(--font-color-dark);
 }
 
