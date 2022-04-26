@@ -124,7 +124,11 @@ body.dark .icons-links a img {
     margin-top:.5rem;
 }
 
-body.dark .user-name, body.dark .user-image {
+ {
+
+}
+
+body.dark .user-name {
     color:var(--font-color-dark);
 }
 
@@ -168,7 +172,7 @@ body.dark .user-name, body.dark .user-image {
     margin: 1rem auto;
     transition: .3s
 }
-body.dark .link-sqr {
+body.dark .link-sqr, body.dark .user-image {
     border-color: var(--font-color-dark);
 }
 
