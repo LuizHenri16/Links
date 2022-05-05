@@ -8,7 +8,7 @@
 
 ##### Desktop
 
-<img src="https://github.com/LuizHenri16/Links/blob/main/assets/screenshot/linkScreenshot2.png" width="768" height="368"/>
+<img src="https://github.com/LuizHenri16/Links/blob/main/assets/screenshot/linkScreenshot2.png" width="320" height="368"/>
 
 ##### mobile
 
