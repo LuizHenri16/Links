@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>LuizHenrique</title>
 </head>
@@ -16,10 +19,9 @@
             <label for="checkbox" class="label">
                 <div class="ball"></div>
             </label>
-            <p>Ative o DarkMode! :)</p>
         </div>
             
-        <div class="main-content">
+        <div class="content">
 
             <div class="user">
                 <div class="user-image">
@@ -29,17 +31,16 @@
             </div>
 
             <div class="links">
-                <div id="project-link" ><a class="link-sqr" href="https://react-app-study-4f1s7no5a-luizhenri16.vercel.app/" target="_blank">Vercel Projeto appReact</a></div>
-                <div id="project-link" ><a class="link-sqr" href="https://great-code-rosy.vercel.app/" target="_blank">Vercel Projeto GreatCode</a></div>
-                <div id="project-link" ><a class="link-sqr" href="https://responsive-teste.vercel.app/" target="_blank">Vercel Projeto Enver</a></div>
-                <div id="project-link" ><a class="link-sqr" href="https://login-app-theta.vercel.app/" target="_blank">Vercel Projeto Login-App</a></div>
+                <div id="project-link" ><a class="link-sqr" onclick="projectLink1()">Vercel Projeto appReact</a></div>
+                <div id="project-link" ><a class="link-sqr" onclick="projectLink2()">Vercel Projeto GreatCode</a></div>
+                <div id="project-link" ><a class="link-sqr" onclick="projectLink3()">Vercel Projeto Enver</a></div>
+                <div id="project-link" ><a class="link-sqr" onclick="projectLink4()">Vercel Projeto Login-App</a></div>
             </div>
 
             <div class="icons-links">
-                <div class="icon-github pad"><a href="https://github.com/LuizHenri16" target="_blank"><img src='assets/github.svg' alt='GitHub-logo-icon'></img></a></div>
-                <div class="icon-instagram pad"><a href="https://www.instagram.com/_._luizhenrique/" target="_blank"><img src="assets/instagram.svg" alt="Instagram-logo-icon"></a></div>
-                <div class="icon-linkedin pad"><a href="https://www.linkedin.com/in/luiz-henrique-395922213/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin-logo-icon"></a></div>
-                <div class="icon-twitch pad" target="_blank"><a href="https://www.twitch.tv/luiz16o" target="_blank"><img src="assets/twitch.svg" alt="Twitch-logo-icon"></a></div>
+                <div class="icon-github pad" onclick="gitHub()"><img src='assets/github-icon.svg' alt='GitHub-logo-icon'></img></div>
+                <div class="icon-instagram pad" onclick="instagram()"><img src="assets/instagram-icon.svg" alt="Instagram-logo-icon"></div>
+                <div class="icon-linkedin pad" onclick="linkedin()"><img src="assets/linkedin-icon.svg" alt="Linkedin-logo-icon"></div>
             </div>
         </div>
     </main>
